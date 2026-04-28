@@ -1,76 +1,31 @@
+# brvmfinance
 
-```markdown
-<img src="https://raw.githubusercontent.com/votre-username/brvmfinance/main/doc/logo.png" height="100">
+**brvmfinance** est une bibliothèque Python conçue pour faciliter l'accès aux données boursières de la **BRVM** (Bourse Régionale des Valeurs Mobilières).
 
-# Données du marché de la BRVM avec Python
-
-<a target="new" href="https://pypi.python.org/pypi/brvmfinance"><img border=0 src="https://img.shields.io/badge/python-3.7+-blue.svg?style=flat" alt="Python version"></a>
-<a target="new" href="https://pypi.python.org/pypi/brvmfinance"><img border=0 src="https://img.shields.io/pypi/v/brvmfinance.svg?maxAge=60%" alt="PyPi version"></a>
-<a target="new" href="https://pypi.python.org/pypi/brvmfinance"><img border=0 src="https://img.shields.io/pypi/status/brvmfinance.svg?maxAge=60" alt="PyPi status"></a>
-<a target="new" href="https://pypi.python.org/pypi/brvmfinance"><img border=0 src="https://img.shields.io/pypi/dm/brvmfinance.svg?maxAge=86400&label=installs&color=%2327B1FF" alt="PyPi downloads"></a>
-<a target="new" href="https://github.com/votre-username/brvmfinance"><img border=0 src="https://img.shields.io/github/stars/votre-username/brvmfinance.svg?style=social&label=Star&maxAge=60" alt="Star this repo"></a>
-
-**brvmfinance** offre une solution Pythonic pour récupérer des données financières et boursières de la [BRVM (Bourse Régionale des Valeurs Mobilières)](https://www.brvm.org).
+[![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)](https://pypi.org/project/brvmfinance/)
+[![PyPi Version](https://img.shields.io/pypi/v/brvmfinance.svg)](https://pypi.org/project/brvmfinance/)
+[![Downloads](https://img.shields.io/pypi/dm/brvmfinance.svg?label=installs&color=%2327B1FF)](https://pypi.org/project/brvmfinance/)
+[![Stars](https://img.shields.io/github/stars/SORADATA/brvmfinance.svg?style=social)](https://github.com/SORADATA/brvmfinance)
 
 ---
 
-> [!IMPORTANT]  
-> **brvmfinance** est un outil open-source destiné à la recherche et à l'éducation. Il n'est **pas** affilié, approuvé ou validé par la BRVM. 
-> 
-> Il s'agit d'un outil communautaire qui utilise des données accessibles publiquement. Vous devez vous référer aux conditions d'utilisation des sources de données concernant vos droits d'utilisation des données téléchargées.
+## 🚀 Présentation
+
+Inspiré par `yfinance`, ce package permet aux analystes et développeurs de récupérer facilement les cotations, les historiques et les informations sur les sociétés cotées à la BRVM.
+
+> [!IMPORTANT]
+> Ce projet est open-source et n'est pas affilié officiellement à la BRVM. Les données sont récupérées à des fins éducatives et de recherche.
 
 ---
 
-## Composants principaux
+## 🛠 Composants principaux
 
-- `Ticker`: Données d'un titre individuel (ex: SNTS, ETIT).
-- `Tickers`: Données pour plusieurs titres simultanément.
-- `download`: Téléchargement de données historiques en masse.
-- `Market`: Informations sur l'état du marché et les indices (BRVM 30, Composite).
-- `CorporateActions`: Récupération des dividendes et fractionnements d'actions.
-- `Screener`: Outil pour filtrer et trier les actions du marché selon des critères.
+* **`Ticker`** : Accéder aux données d'un titre spécifique (ex: `SNTS`, `ETIT`).
+* **`Tickers`** : Gérer plusieurs titres à la fois.
+* **`download`** : Télécharger des séries historiques massives.
+* **`Market`** : Obtenir un résumé de l'état du marché et des indices.
 
-## Installation
-
-Installez `brvmfinance` depuis PyPI en utilisant `pip` :
+## 📦 Installation
 
 ```bash
-$ pip install brvmfinance
-```
-
-## Exemple d'utilisation
-
-```python
-import brvmfinance as brvm
-
-# Initialiser un titre (ex: Sonatel)
-snts = brvm.Ticker("SNTS")
-
-# Récupérer l'historique du dernier mois
-hist = snts.history(period="1mo")
-
-# Voir les dividendes
-print(snts.dividends)
-```
-
----
-
-## Contribution
-
-**brvmfinance** compte sur la communauté pour corriger les bugs et améliorer les fonctionnalités. Toute aide est la bienvenue !
-
----
-
-### Mentions Légales
-
-**brvmfinance** est distribué sous la licence **Apache Software License**. Consultez le fichier `LICENSE.txt` pour plus de détails.
-
-Encore une fois — **brvmfinance** n'est **pas** affilié à la BRVM. C'est un outil open-source destiné à faciliter l'analyse financière sur le marché régional de l'UEMOA. L'utilisateur est seul responsable de l'usage qu'il fait des données obtenues.
-
----
-
-### P.S.
-
-N'hésitez pas à me contacter ou à ouvrir une issue pour toute suggestion ou retour.
-
-```
+pip install brvmfinance
