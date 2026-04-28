@@ -1,0 +1,23 @@
+# Fichiers de compilation Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels (si tu en crées un)
+venv/
+.venv/
+env/
+
+# Fichiers de distribution (générés lors de la création du package)
+dist/
+build/
+*.egg-info/
+
+# Configuration de l'éditeur (VS Code)
+.vscode/
+.idea/
+
+# Fichiers de données temporaires ou tests
+*.csv
+*.json
+test_sika.py
