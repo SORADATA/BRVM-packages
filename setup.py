@@ -17,13 +17,12 @@ except FileNotFoundError:
 
 setup(
     name='brvmfinance',
-    version='0.1.0',
+    version='0.1.1',
     description='Download market data from BRVM (Bourse Régionale des Valeurs Mobilières)',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/SORADATA/brvmfinance',
-    author='Ton Nom',
-    author_email='ton.email@example.com',
+    author='soradata',
     license='MIT',
     classifiers=[
         'License :: OSI Approved :: MIT License',
