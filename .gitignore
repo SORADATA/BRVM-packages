@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Environnements virtuels (si tu en crées un)
+# Environnements virtuels
 venv/
 .venv/
 env/
@@ -20,4 +20,4 @@ build/
 # Fichiers de données temporaires ou tests
 *.csv
 *.json
-test_sika.py
+#test_sika.py

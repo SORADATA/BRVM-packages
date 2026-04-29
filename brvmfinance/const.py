@@ -6,6 +6,16 @@ PERIOD_DEFAULT = '1mo if start & end None'
 
 _PRICE_COLNAMES_ = ['Open', 'High', 'Low', 'Close', 'Adj Close']
 
+_SIKA_MAPPING_ = {
+    'd': 'Date',
+    'o': 'Open',
+    'h': 'High',
+    'l': 'Low',
+    'c': 'Close',
+    'v': 'Volume'
+}
+
+
 USER_AGENTS = [
     # Chrome
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",

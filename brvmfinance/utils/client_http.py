@@ -1,6 +1,6 @@
 import random
 import string
-from .const import USER_AGENTS
+from brvmfinance.const import USER_AGENTS
 
 
 def get_header():
