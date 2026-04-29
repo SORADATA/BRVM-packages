@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/home/onyxia/work/brvmfinance/docs/source/_static/logo.png" width="550" alt="brvmfinance logo">
+  <img src="brvmfinance/docs/source/_static/logo.png" width="550" alt="brvmfinance logo">
 </p>
 
 # Télécharger les données boursières de la BRVM
